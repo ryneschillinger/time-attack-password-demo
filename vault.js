@@ -11,7 +11,7 @@ function measureDigits() {
   for (var n = 0; n < 100000; n++) {
     for (var i = 0; i < 10; i++) {
       var digit = i;
-      var guess = "2363" + digit;
+      var guess = "" + digit;
 
       var t0 = now();
       if (checkPassword(guess + "paaaad") || checkPassword(guess)) {
